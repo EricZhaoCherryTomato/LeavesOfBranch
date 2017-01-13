@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Reflection;
 using Autofac;
 using Autofac.Builder;
 
@@ -6,22 +7,15 @@ namespace RepoPattern
 {
     internal class Program
     {
-        private static IContainer Container { get; set; }
+        
         private static void Main(string[] args)
         {
+            var assemblies = AppDomain.CurrentDomain.GetAssemblies();
             var builder = new ContainerBuilder();
+            builder.RegisterAssemblyModules(assemblies);
+            var container = builder.Build();
 
-            builder.RegisterType<PersonRepository>()
-                  .As<IPersonRepository>()
-                  .InstancePerLifetimeScope();
-
-            builder.RegisterType<PersonService>()
-                   .As<IPersonService>()
-                   .InstancePerLifetimeScope();
-
-            Container = builder.Build();
-
-            var scope = Container.BeginLifetimeScope();
+            var scope = container.BeginLifetimeScope();
 
             var  ps = scope.Resolve<IPersonService>();
 
