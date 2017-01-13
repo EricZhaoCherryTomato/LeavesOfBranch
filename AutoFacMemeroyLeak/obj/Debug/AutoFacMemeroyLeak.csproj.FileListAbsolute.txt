@@ -1,8 +1,0 @@
-D:\ye-git\DesignPattern\AutoFacMemeroyLeak\AutoFacMemeroyLeak\bin\Debug\AutoFacMemeroyLeak.exe.config
-D:\ye-git\DesignPattern\AutoFacMemeroyLeak\AutoFacMemeroyLeak\bin\Debug\AutoFacMemeroyLeak.exe
-D:\ye-git\DesignPattern\AutoFacMemeroyLeak\AutoFacMemeroyLeak\bin\Debug\AutoFacMemeroyLeak.pdb
-D:\ye-git\DesignPattern\AutoFacMemeroyLeak\AutoFacMemeroyLeak\bin\Debug\Autofac.dll
-D:\ye-git\DesignPattern\AutoFacMemeroyLeak\AutoFacMemeroyLeak\bin\Debug\Autofac.xml
-D:\ye-git\DesignPattern\AutoFacMemeroyLeak\AutoFacMemeroyLeak\obj\Debug\AutoFacMemeroyLeak.csprojResolveAssemblyReference.cache
-D:\ye-git\DesignPattern\AutoFacMemeroyLeak\AutoFacMemeroyLeak\obj\Debug\AutoFacMemeroyLeak.exe
-D:\ye-git\DesignPattern\AutoFacMemeroyLeak\AutoFacMemeroyLeak\obj\Debug\AutoFacMemeroyLeak.pdb
