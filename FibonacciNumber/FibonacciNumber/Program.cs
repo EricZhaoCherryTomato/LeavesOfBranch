@@ -8,31 +8,22 @@ namespace FibonacciNumber
 {
     class Program
     {
-        static int FibonacciSeries(int n)
+        static int NthFibonacciSeries(int n)
         {
-            int firstNum = 0;
-            int secondNum = 1;
-            int result = 0;
-
-            for (int i = 2; i <= n; i++)
+            if (n == 0 || n == 1)
             {
-                result = firstNum + secondNum;
-                firstNum = secondNum;
-                secondNum = result;
+                return n;
             }
-
-            return result;
+            return NthFibonacciSeries(n-1) + NthFibonacciSeries(n-2);
         }
         static void Main(string[] args)
         {
 
-            Console.Write("Enter the length of the Fibonacci Series: ");
-            int length = Convert.ToInt32(Console.ReadLine());
-
-            for (int i = 0; i < length; i++)
-            {
-                Console.Write("{0} ", FibonacciSeries(i));
-            }
+            Console.Write("Enter the nth number of the Fibonacci Series: ");
+            int number = Convert.ToInt32(Console.ReadLine());
+            number = number - 1;
+            //We have to decrement the length because the series starts with 0  
+            Console.Write(NthFibonacciSeries(number));
             Console.ReadKey();
         }
     }
