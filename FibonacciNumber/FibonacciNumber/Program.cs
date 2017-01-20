@@ -16,14 +16,38 @@ namespace FibonacciNumber
             }
             return NthFibonacciSeries(n-1) + NthFibonacciSeries(n-2);
         }
+
+        //static int NegativeNthFibonacciSeries(int n)
+        //{
+        //    return Math.Pow(-1, n + 1) * NthFibonacciSeries(n);
+        //}
+
+        static long FibonacciSeries(long n)
+        {
+            long firstnumber = 0, secondnumber = 1, result = 0;
+
+            if (n == 0) return 0; //To return the first Fibonacci number   
+            if (n == 1) return 1; //To return the second Fibonacci number   
+
+
+            for (int i = 2; i <= n; i++)
+            {
+                result = firstnumber - secondnumber;
+                firstnumber = secondnumber;
+                secondnumber = result;
+            }
+
+            return result;
+        }
         static void Main(string[] args)
         {
-
+            Console.Write(-1-1);
             Console.Write("Enter the nth number of the Fibonacci Series: ");
-            int number = Convert.ToInt32(Console.ReadLine());
-            number = number - 1;
-            //We have to decrement the length because the series starts with 0  
-            Console.Write(NthFibonacciSeries(number));
+            int length = Convert.ToInt32(Console.ReadLine());
+            for (int i = 0; i < length; i++)
+            {
+                Console.Write("{0} ", FibonacciSeries(i));
+            }
             Console.ReadKey();
         }
     }
