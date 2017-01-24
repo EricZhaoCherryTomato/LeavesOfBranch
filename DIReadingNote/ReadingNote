@@ -1,0 +1,19 @@
+DEFINITION Dependency Injection is a set of software design principles and patterns
+that enable us to develop loosely coupled code.
+
+The ability to replace one end without changing the other is similar to a central software design principle called
+the LISKOV SUBSTITUTION PRINCIPLE. This principle states that we should be able to replace one implementation of an interface with another without breaking either client
+or implementation.
+
+In software design, this way of INTERCEPTING one implementation with another
+implementation of the same interface is known as the Decorator 5 design pattern. It
+gives us the ability to incrementally introduce new features and CROSS-CUTTING CONCERNS
+without having to rewrite or change a lot of our existing code.
+Another way to add new functionality to an existing code base is to compose an
+existing implementation of an interface with a new implementation. When we aggregate
+several implementations into one, we use the Composite 6 design pattern
+
+With software, however, a client often expects a service to be available.
+If the service was removed, we get a NullReferenceException. To deal with this type of
+situation, we can create an implementation of an interface that does “nothing.” This is
+a design pattern known as Null Object
