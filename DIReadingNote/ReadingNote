@@ -17,3 +17,9 @@ With software, however, a client often expects a service to be available.
 If the service was removed, we get a NullReferenceException. To deal with this type of
 situation, we can create an implementation of an interface that does “nothing.” This is
 a design pattern known as Null Object
+
+The important criteria for STABLE DEPENDENCIES are
+■ The class or module already exists.
+■ You expect that new versions won’t contain breaking changes.
+■ The types in question contain deterministic algorithms.
+■ You never expect to have to replace the class or module with another.
