@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.23107.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SqlDataAccess", "SqlDataAccess\SqlDataAccess.csproj", "{F07F9765-EB33-42FE-A1E7-B81D219FB0D1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DomainLogic", "DomainLogic\DomainLogic.csproj", "{17B2C521-2F7A-4673-A691-734FA4995A5C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebUI", "WebUI\WebUI.csproj", "{61DA8C3F-8C99-4C53-AD26-D0B55E39476C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F07F9765-EB33-42FE-A1E7-B81D219FB0D1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F07F9765-EB33-42FE-A1E7-B81D219FB0D1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F07F9765-EB33-42FE-A1E7-B81D219FB0D1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F07F9765-EB33-42FE-A1E7-B81D219FB0D1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{17B2C521-2F7A-4673-A691-734FA4995A5C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{17B2C521-2F7A-4673-A691-734FA4995A5C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{17B2C521-2F7A-4673-A691-734FA4995A5C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{17B2C521-2F7A-4673-A691-734FA4995A5C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{61DA8C3F-8C99-4C53-AD26-D0B55E39476C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{61DA8C3F-8C99-4C53-AD26-D0B55E39476C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{61DA8C3F-8C99-4C53-AD26-D0B55E39476C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{61DA8C3F-8C99-4C53-AD26-D0B55E39476C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
